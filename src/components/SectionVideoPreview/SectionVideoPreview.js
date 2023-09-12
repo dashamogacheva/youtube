@@ -1,3 +1,4 @@
+import styles from './SectionVideoPreview.module.css';
 import VideoPreview from "./VideoPreview";
 // import {useState, useEffect} from 'react';
 // import {getVideoPlaylist} from "../../utils/fetchLogic";
@@ -14,7 +15,7 @@ export default function SectionVideoPreview() {
     // }
 
     return (
-        <div className='SectionVideoPreview'>
+        <div className={styles.sectionVideoPreview}>
             {/*{videoArray.map((video) => (<VideoPreview currentVideo={video.video} key={video.video.videoId}/>))}*/}
             <VideoPreview/>
             <VideoPreview/>

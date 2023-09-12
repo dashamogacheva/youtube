@@ -1,3 +1,5 @@
+import styles from './Header.module.css';
+import classNames from "classnames";
 import menu from "../../icons/menu-burger.svg";
 import notification from '../../icons/notification.svg';
 import videoCreate from '../../icons/videoCreate.svg';
@@ -5,21 +7,29 @@ import avatar from '../../icons/avatar.svg';
 import logo from '../../icons/youtube-logo.svg';
 import search from '../../icons/search.svg';
 
+const searchFormButtonClasses = classNames(styles.button, styles.searchButton);
+const userBarButtonClasses = classNames(styles.button, styles.userBarButton);
+const userBarAvatarClasses = classNames(styles.button, styles.userBarButton, styles.avatar);
+
 export default function Header() {
     return (
-        <div className='App-header'>
-            <div className='Menu-bar'>
-                <img className='header-button' src={menu} alt='menu'/>
-                <img className='logo' src={logo} alt='logo'/>
+        <div className={styles.header}>
+            <div className={styles.menu}>
+                <img className={styles.button} src={menu} alt='menu'/>
+                <img className={styles.logo} src={logo} alt='logo'/>
             </div>
-            <form className='search-form'>
-                <input className='input-search' type="text" placeholder='Введите запрос'/>
-                <img className='header-button search-button' src={search} alt='search'/>
+            <form className={styles.searchForm}>
+                <input className={styles.inputSearch} type="text" placeholder='Введите запрос'/>
+                <img className={searchFormButtonClasses}
+                     src={search} alt='search'/>
             </form>
-            <div className='User-bar'>
-                <img className='header-button User-bar-button' src={videoCreate} alt='videoCreate'/>
-                <img className='header-button User-bar-button' src={notification} alt='notification'/>
-                <img className='header-button User-bar-button avatar' src={avatar} alt='avatar'/>
+            <div className={styles.userBar}>
+                <img className={userBarButtonClasses}
+                     src={videoCreate} alt='videoCreate'/>
+                <img className={styles.button}
+                     src={notification} alt='notification'/>
+                <img className={userBarAvatarClasses}
+                     src={avatar} alt='avatar'/>
             </div>
         </div>
     );

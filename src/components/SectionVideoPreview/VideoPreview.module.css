@@ -1,0 +1,74 @@
+.videoPreview {
+    width: 500px;
+    height: 380px;
+    margin: 20px 20px 20px 0;
+}
+
+.preview {
+    border: none;
+    height: 280px;
+    background-color:#C7C3C38C;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.preview:hover {
+    border-radius: 0;
+    background-color: #A9A9A9FF;
+    cursor: pointer;
+}
+
+.descriptionBoard {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+}
+
+.button:hover {
+    background-color: #C7C3C38C;
+    cursor: pointer;
+}
+
+.userChannelButton {
+    margin: 5px;
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+.description {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.videoTitle {
+    font-weight: 600;
+    font-size: 17px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.channelTitle {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.videoStatistic {
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+}

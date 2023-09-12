@@ -1,8 +1,9 @@
+import styles from './WatchVideoPage.module.css';
 import {Link} from "react-router-dom";
 
-export default function WatchVideo() {
+export default function WatchVideoPage() {
     return (
-        <div className='watch-page'>
+        <div className={styles.watchPage}>
             <div>
                 OOoops! WatchVideo
             </div>
