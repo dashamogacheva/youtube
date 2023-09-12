@@ -1,8 +1,11 @@
 // import {useEffect, useState} from "react";
 // import {getVideoDetails} from "../../utils/fetchLogic";
-
+import styles from './VideoPreview.module.css';
+import classNames from "classnames";
 import {Link} from "react-router-dom";
 import avatar from "../../icons/avatar.svg";
+
+const channelButtonAvatarClasses = classNames(styles.button, styles.userChannelButton, styles.avatar);
 
 export default function VideoPreview(/*{currentVideo: {videoId}}*/) {
 
@@ -20,26 +23,26 @@ export default function VideoPreview(/*{currentVideo: {videoId}}*/) {
     const channelId = 2;
 
     return (
-        <div className='Video-preview'>
-            <div className='preview'>
+        <div className={styles.videoPreview}>
+            <div className={styles.preview}>
 
             </div>
-            <div className='Description-board'>
+            <div className={styles.descriptionBoard}>
                 <Link to={`channel/${channelId}`} style={{ textDecoration: 'none' }}>
-                    <img className='header-button User-bar-button avatar' src={avatar} alt='avatar'/>
+                    <img className={channelButtonAvatarClasses} src={avatar} alt='avatar'/>
                 </Link>
-                <div className='Description'>
+                <div className={styles.description}>
                     <Link to={`video/${videoId}`} style={{ textDecoration: 'none' }}>
-                        <span className='video-title'>
+                        <span className={styles.videoTitle}>
                         Название видео
                         </span>
                     </Link>
                     <Link to={`channel/${channelId}`} style={{ textDecoration: 'none' }}>
-                        <span className='channel-title'>
+                        <span className={styles.channelTitle}>
                         Автор видео
                         </span>
                     </Link>
-                    <span className='video-statistic'>
+                    <span className={styles.videoStatistic}>
                         264 просмотра - 3 года назад
                     </span>
                 </div>

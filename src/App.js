@@ -1,24 +1,8 @@
 import './App.css';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import MainPage from './components/MainPage/MainPage';
-import WatchVideo from './components/WatchVideo/WatchVideo';
-import Channel from './components/Channel/Channel';
+import {RouterProvider} from 'react-router-dom';
 import Header from "./components/Header/Header";
+import {router} from "./utils/routing";
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <MainPage/>
-    },
-    {
-        path: 'video/:videoId',
-        element: <WatchVideo/>
-    },
-    {
-        path: 'channel/:channelId',
-        element: <Channel/>
-    }
-]);
 
 function App() {
     return (

@@ -1,0 +1,8 @@
+.sectionVideoPreview {
+    position: fixed;
+    width: auto;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0 0 90px;
+}

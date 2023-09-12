@@ -1,11 +1,12 @@
+import styles from './Channel.module.css';
 import {Link} from 'react-router-dom';
-import SidePanel from "../SidePanel/SidePanel";
+import SidePanel from "../../components/SidePanel/SidePanel";
 
 export default function Channel() {
     return (
         <>
             <SidePanel/>
-            <div className='channel-page'>
+            <div className={styles.channelPage}>
                 <div>
                     OOoops! Channel
                 </div>
