@@ -1,0 +1,75 @@
+.mainTabChannel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    margin: 10px 0 0 0;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.titleVideos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.titleStyle {
+    padding: 0 0 4px 0;
+    font-weight: 500;
+    margin: 10px 10px 10px 0;
+}
+
+.playAllButton {
+    border: none;
+    height: 25px;
+    padding: 0 10px 0 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.playAllButton:hover {
+    background-color: #C7C3C38C;
+    cursor: pointer;
+}
+
+.playIcon {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0;
+}
+
+.allVideosList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    height: 150px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.borderBottom {
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid #989898;
+    width: 100%;
+}

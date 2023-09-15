@@ -1,0 +1,37 @@
+.channelVideoPreview {
+    width: 160px;
+    margin: 0 5px 0 0;
+}
+
+.channelVideoPreview:hover {
+    cursor:pointer;
+}
+
+.preview {
+    height: 90px;
+    border: none;
+    background-color: #C7C3C38C;
+    border-radius: 5px;
+}
+
+.preview:hover {
+    border-radius: 0;
+    background-color: #A9A9A9FF;
+    cursor: pointer;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.videoTitle {
+    font-weight: 500;
+    margin: 5px 0 5px 0;
+}
+
+.videoStatistic {
+    font-size: 10px;
+}
