@@ -1,5 +1,5 @@
 import styles from './SectionVideoPreview.module.css';
-import VideoPreview from "./VideoPreview";
+import VideoPreview from "../VideoPreview/VideoPreview";
 // import {useState, useEffect} from 'react';
 // import {getVideoPlaylist} from "../../utils/fetchLogic";
 

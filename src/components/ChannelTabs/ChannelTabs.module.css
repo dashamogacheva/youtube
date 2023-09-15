@@ -1,0 +1,26 @@
+.channelTabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.tab {
+    padding: 10px 15px 10px 15px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.tab:focus {
+    border-bottom: 2px solid black;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #989898;
+    width: 100%;
+}
